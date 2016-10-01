@@ -12,3 +12,9 @@ https://www.raspberrypi.org/documentation/remote-access/ssh/
 
 ### VNC
 https://www.raspberrypi.org/documentation/remote-access/vnc/
+
+
+Default Raspberry PI login:
+
+user: pi
+pass: respberry

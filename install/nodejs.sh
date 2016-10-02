@@ -8,8 +8,6 @@ source ~/.bashrc > /dev/null 2>&1
 nvm install node
 nvm alias default node
 
-nvm install iojs
-
 nvm ls
 
 # OLD stuff. Let's install nodeJS with NVM

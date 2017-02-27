@@ -4,8 +4,12 @@ Setup &amp; examples for my Raspberry PI
 
 ## GETTING STARTED
 
-Follow the getting started guide on [www.raspberrypi.org](https://www.raspberrypi.org/learning/quick-start-guide/quickstart/). 
-Mind the formatting of the SD card.
+Follow the getting started guide on [www.raspberrypi.org](https://www.raspberrypi.org/learning/quick-start-guide/quickstart/). <br />
+_Mind the formatting of the SD card._
+
+
+## GET SOME STUFF INSTALLED
+[Install PHP, NodeJS and other tooling](./install/README.md)
 
 
 ## HOW TO

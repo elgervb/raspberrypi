@@ -9,7 +9,7 @@ _Mind the formatting of the SD card._
 
 
 ## GET SOME STUFF INSTALLED
-[Install PHP, NodeJS and other tooling](./install/README.md)
+[Install PHP, NodeJS, Kodi and other tooling](./install/README.md)
 
 
 ## HOW TO

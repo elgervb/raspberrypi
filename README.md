@@ -1,23 +1,17 @@
-# raspberrypi
+# RASPBERRY PI
 Setup &amp; examples for my Raspberry PI
 
 
-## Gettings started
+## GETTING STARTED
 
 Follow the getting started guide on [www.raspberrypi.org](https://www.raspberrypi.org/learning/quick-start-guide/quickstart/). 
 Mind the formatting of the SD card.
 
-### SSH
-https://www.raspberrypi.org/documentation/remote-access/ssh/
 
-### VNC
-https://www.raspberrypi.org/documentation/remote-access/vnc/
+## HOW TO
 
-
-Default Raspberry PI login:
-
-**user**: pi <br />
-**pass**: raspberry
+### Remote access to your PI (with ssh & VNC) 
+[Remote access](./howto/remote-access.md)
 
 
 # TROUBLESHOUTING

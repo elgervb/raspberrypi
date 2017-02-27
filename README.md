@@ -25,8 +25,11 @@ pass: raspberry
 ### error: _eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x300c_
 
 GPU does not have enough memory. You can increase it by following these steps:
-- `sudo raspi-config`
 
+Open the Raspberry PI's Config by typing in the console:
+```
+sudo raspi-config
+```
 This will open up a menu on a blue background. Perform the following actions:
 
 - Go to Advanced Options.

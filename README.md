@@ -22,7 +22,7 @@ pass: raspberry
 
 # TROUBLESHOUTING
 
-- **error: _eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x300c_**
+### error: _eglCreateImageKHR:  failed to create image for buffer 0x1 target 12465 error 0x300c_
 
 GPU does not have enough memory. You can increase it by following these steps:
 - `sudo raspi-config`

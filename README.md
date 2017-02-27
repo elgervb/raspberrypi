@@ -16,7 +16,7 @@ https://www.raspberrypi.org/documentation/remote-access/vnc/
 
 Default Raspberry PI login:
 
-user: pi
+user: pi <br />
 pass: raspberry
 
 

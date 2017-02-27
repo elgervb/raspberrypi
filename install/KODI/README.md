@@ -43,7 +43,7 @@ This will open up a menu on a blue background. Perform the following actions:
 
 
 
-### NO SHOUND
+### NO SOUND
 **Q) My Kodi is playing, but I do not hear any sound...**
 
 **A)** Check if there is a red sound icon in the top right corner of your screen. If so, then Kodi has been muted.

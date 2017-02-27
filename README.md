@@ -14,8 +14,8 @@ _Mind the formatting of the SD card._
 
 ## HOW TO
 
-### Remote access to your PI (with ssh & VNC) 
-[Remote access](./howto/remote-access.md)
+### [Remote access](./howto/remote-access.md)
+Remote access to your PI (with ssh & VNC) 
 
 
 # TROUBLESHOUTING

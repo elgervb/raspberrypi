@@ -1,7 +1,7 @@
 echo -e "\n--- Installing PHP with modules ---\n"
 
-sudo apt-get install php5 > /dev/null 2>&1
-sudo apt-get install -y php5-gd php5-mcrypt php5-mysql php5-sqlite php-apc  > /dev/null 2>&1
+sudo apt-get install php5.6 > /dev/null 2>&1
+sudo apt-get install -y php5-gd php5-mcrypt php5-mysql php5-sqlite php5.6-xml php-apc  > /dev/null 2>&1
 php -v
 
 # turn on PHP errors

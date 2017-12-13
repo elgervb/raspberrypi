@@ -6,6 +6,12 @@ Access your PI from your network and outside
 Commandline SSH access: 
 [Raspberry Docs on SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
+Or on headless mode:
+`sudo systemctl enable ssh`
+`sudo systemctl start ssh`
+or
+put a file names `ssh` into the root of the SD card
+
 ## VNC
 Remote desktop with VNC:
 [Raspberry Docs on VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/)

@@ -28,3 +28,14 @@ sudo systemctl restart apache2
 sudo a2enmod ssl
 sudo a2ensite default-ssl
 sudo systemctl reload apache2
+
+
+# MARIABD 
+sudo mysql
+
+CREATE DATABASE nextcloud;
+CREATE USER nextcloud@localhost IDENTIFIED BY 'pass';
+GRANT ALL PRIVILEGES ON *.* TO nextcloud@'%' IDENTIFIED BY 'pass';
+FLUSH PRIVILEGES;
+
+sudo -u www-data php occ  maintenance:install --database "mysql" --database-name "nextcloud"  --database-user "nextcloud" --database-pass "pass" --admin-user "admin" --admin-pass "password"

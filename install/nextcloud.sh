@@ -31,11 +31,21 @@ sudo systemctl reload apache2
 
 
 # MARIABD 
-sudo mysql
 
-CREATE DATABASE nextcloud;
-CREATE USER nextcloud@localhost IDENTIFIED BY 'pass';
-GRANT ALL PRIVILEGES ON *.* TO nextcloud@'%' IDENTIFIED BY 'pass';
-FLUSH PRIVILEGES;
+sudo mysql_secure_installation
+# answer yes to all questions
 
-sudo -u www-data php occ  maintenance:install --database "mysql" --database-name "nextcloud"  --database-user "nextcloud" --database-pass "pass" --admin-user "admin" --admin-pass "password"
+sudo mysql -u root -p
+	create database nextcloud;
+	create user nxtcloudadmin@localhost identified by 'admin123';
+	grant all privileges on nextcloud.* to nxtcloudadmin@localhost identified by 'admin123';
+	flush privileges;
+	exit;
+	
+sudo vi /etc/mysql/my.cnf
+# add these lines at the bottom:
+	log-bin = /var/log/mysql/mariadb-bin
+	log-bin-index = /var/log/mysql/mariadb-bin.index
+	binlog_format = mixed
+	
+sudo systemctl reload mysql

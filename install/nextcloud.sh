@@ -1,3 +1,4 @@
+# https://docs.nextcloud.com/server/19/admin_manual/index.html
 
 cd ~
 mkdir tmp-nextcloud

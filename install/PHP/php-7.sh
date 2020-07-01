@@ -14,6 +14,6 @@ sudo pecl install apcu
 sudo echo "extension=apcu.so" | sudo tee -a /etc/php/7.3/mods-available/cache.ini
 sudo ln -s /etc/php/7.3/mods-available/cache.ini /etc/php/7.3/apache2/conf.d/30-cache.ini
 
-systemctl restart apache2
+sudo systemctl restart apache2
 
 php -v

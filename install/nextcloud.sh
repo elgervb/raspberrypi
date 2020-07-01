@@ -28,7 +28,7 @@ sudo systemctl restart apache2
 # SSL
 sudo a2enmod ssl
 sudo a2ensite default-ssl
-sudo systemctl reload apache2
+sudo systemctl restart apache2
 
 
 # MARIABD 
@@ -49,4 +49,4 @@ sudo vi /etc/mysql/my.cnf
 	log-bin-index = /var/log/mysql/mariadb-bin.index
 	binlog_format = mixed
 	
-sudo systemctl reload mysql
+sudo systemctl restart mysql

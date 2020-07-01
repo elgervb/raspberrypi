@@ -6,14 +6,13 @@ cd tmp-nextcloud
 wget https://download.nextcloud.com/server/releases/nextcloud-19.0.0.tar.bz2
 tar -xjf nextcloud-19.0.0.tar.bz2
 
-sudo chmod 777 /var/www/html/
 sudo rm /var/www/html/index.html
-cp -r nextcloud/* /var/www/html/
-sudo chmod 777 /var/www/html/*
+sudo cp -r nextcloud/* /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/
 
 cd ..
 rm -rf tmp-nextcloud
-rm /var/www/
+cd /var/www/html
 
 sudo systemctl restart apache2
 
@@ -38,8 +37,8 @@ sudo mysql_secure_installation
 
 sudo mysql -u root -p
 	create database nextcloud;
-	create user nxtcloudadmin@localhost identified by 'admin123';
-	grant all privileges on nextcloud.* to nxtcloudadmin@localhost identified by 'admin123';
+	create user nextcloud@localhost identified by '<PWD>';
+	grant all privileges on nextcloud.* to nextcloud@localhost identified by '<PWD>';
 	flush privileges;
 	exit;
 	
@@ -50,3 +49,6 @@ sudo vi /etc/mysql/my.cnf
 	binlog_format = mixed
 	
 sudo systemctl restart mysql
+
+# configuration
+## https://docs.nextcloud.com/server/latest/admin_manual/configuration_database/linux_database_configuration.html

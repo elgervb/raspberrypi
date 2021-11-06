@@ -2,6 +2,9 @@
 
 Installs PHP related tooling
 
+## PHP 8
+https://lindevs.com/install-php-8-0-on-raspberry-pi/
+
 ## PHP 5.6
 ``` 
 ./php-5.6.sh

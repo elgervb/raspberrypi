@@ -3,8 +3,8 @@
 cd ~
 mkdir tmp-nextcloud
 cd tmp-nextcloud
-wget https://download.nextcloud.com/server/releases/nextcloud-19.0.0.tar.bz2
-tar -xjf nextcloud-19.0.0.tar.bz2
+wget https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2
+tar -xjf nextcloud-22.2.0.tar.bz2
 
 sudo rm /var/www/html/index.html
 sudo cp -r nextcloud/* /var/www/html/

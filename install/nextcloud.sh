@@ -6,9 +6,8 @@ cd tmp-nextcloud
 wget https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2
 tar -xjf nextcloud-22.2.0.tar.bz2
 
-sudo rm /var/www/html/index.html
-sudo cp -r nextcloud/* /var/www/html/
-sudo chown -R www-data:www-data /var/www/html/
+sudo cp -r nextcloud/* /var/www/nextcloud/
+sudo chown -R www-data:www-data /var/www/nextcloud/
 
 cd ..
 rm -rf tmp-nextcloud

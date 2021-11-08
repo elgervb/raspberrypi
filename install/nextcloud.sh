@@ -12,7 +12,7 @@ sudo chown -R www-data:www-data /var/www/nextcloud/
 
 cd ..
 rm -rf tmp-nextcloud
-cd /var/www/html
+cd /var/www/nextcloud
 
 sudo systemctl restart apache2
 

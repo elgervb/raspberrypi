@@ -10,4 +10,8 @@ This section explains how to install software on you Raspberry PI
 
 
 ### Samba
+https://pimylifeup.com/raspberry-pi-qbittorrent/
 https://howchoo.com/pi/how-to-make-a-raspberry-pi-nas-device-with-samba
+https://pimylifeup.com/raspberrypi-minidlna/
+
+https://pimylifeup.com/raspberry-pi-nginx/
